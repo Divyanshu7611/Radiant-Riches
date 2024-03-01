@@ -10,7 +10,7 @@ interface SectionCardProps {
   imagetext: string;
   heading: string;
   description: string;
-  highlight: string;
+  highlight: React.ReactNode;
   ratingNum: number;
   ratingStar: number;
   ratingText: string;
@@ -27,7 +27,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
   ratingText,
 }) => {
   return (
-    <div className="flex md:flex-row flex-col justify-between bg-white p-4">
+    <div className="flex md:flex-row flex-col justify-between bg-white p-4 rounded-xl">
       <div className="flex flex-col jusify-center items-center my-auto">
         <img src={image} />
         <h3 className="text-imageText text-[13px] font-normal">{imagetext}</h3>
@@ -39,7 +39,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
         {/* main highlight div */}
         <div className="text-[#4B5665] font-bold text-base">
           <h3 className="text-[#2C384A]">Main highlights</h3>
-          <p className="font-normal pl-5">{highlight}</p>
+          <div className="font-normal pl-5">{highlight}</div>
           <Link
             href="#"
             className="flex items-baseline text-[#1B88F4] text-base font-normal no-underline hover:font-medium gap-1"
