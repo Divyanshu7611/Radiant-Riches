@@ -37,6 +37,7 @@ function Footer() {
                 <a
                   href={link.href}
                   className="text-[#B6BDC4] no-underline hover:underline"
+                  key={"link"}
                 >
                   <div className="text-white">{link.title}</div>
                   {link.label}
@@ -49,6 +50,7 @@ function Footer() {
                 <a
                   href={link.href}
                   className="text-[#B6BDC4] no-underline hover:underline"
+                  key={"link"}
                 >
                   <div className="text-white">{link.title}</div>
                   {link.label}

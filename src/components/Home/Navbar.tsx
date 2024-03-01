@@ -63,7 +63,7 @@ export default function Navbar() {
         </li>
         <li>
           <a href="#" className="text-[#D1D6DA] no-underline">
-            Today's Deals
+            Today &apos s Deals
           </a>
         </li>
       </ul>
